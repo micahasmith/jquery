@@ -31,8 +31,8 @@ module.exports = function( grunt ) {
 	var config = grunt.config;
 	var template = grunt.template;
 	var distpaths = [
-		"dist/jquery.js",
-		"dist/jquery.min.js"
+		"dist/mquery.js",
+		"dist/mquery.min.js"
 	];
 
 	grunt.initConfig({
@@ -51,7 +51,7 @@ module.exports = function( grunt ) {
 			]
 		},
 		build: {
-			"dist/jquery.js": [
+			"dist/mquery.js": [
 				"src/intro.js",
 				"src/core.js",
 				"src/callbacks.js",
@@ -81,11 +81,11 @@ module.exports = function( grunt ) {
 			]
 		},
 		min: {
-			"dist/jquery.min.js": [ "<banner>", "dist/jquery.js" ]
+			"dist/mquery.min.js": [ "<banner>", "dist/mquery.js" ]
 		},
 
 		lint: {
-			dist: "dist/jquery.js",
+			dist: "dist/mquery.js",
 			grunt: "grunt.js",
 			tests: "test/unit/**/*.js"
 		},
