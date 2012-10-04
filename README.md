@@ -3,4 +3,6 @@
 
 The only way to know for certain that your newer jquery won't interfere with your old jquery is to rename the new one to mquery, when you have absolutely no control over being able to $.noConflict.
 
+Use mquery by doing `m$()` instead of `$()`.
+
 For external scripts that you want to use with mquery, you should probably module pattern in the name change. (I would guess)
